@@ -30,6 +30,21 @@
 
 <body>
 
+    <!-- audio -->
+    <div class="container msc">
+        <button class="btn btn-danger" class="display-none" onclick="toggleMusic()" id="btn-playback"
+            data-play="false">
+            <i class="fa fa-play"></i>
+        </button>
+        <audio id="audio">
+            <source id="audio" src="./rer.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- audio akhir -->
+
+
+
 
     <!-- modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -88,7 +103,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#galeri">
+                    <a href="./LIGHTBOX/index.html">
                         <span class="icon">
                             <ion-icon name="camera-outline"></ion-icon>
                         </span>
@@ -136,7 +151,7 @@
             Ceremony </h4>
         <div class="row pt-5">
             <div class="col-12">
-                <img data-aos="fade-right" src="./images/cp1.png" style="width: 300px; height: auto; max-width: 100%;">
+                <img data-aos="fade-up" src="./images/cp1.png" style="width: 300px; height: auto; max-width: 100%;">
                 <br>
                 <span style="font-family: latin; font-size: 35px; color: rgb(104, 35, 35)">Yulia Rahmawati</span>
                 <h4 style="font-size: 20px; font-family: standart; color:rgb(83, 83, 83) ; ">Putri Dari Bapak Sutrisno
@@ -151,7 +166,7 @@
                 <span data-aos="fade-left" style="font-family: latin; font-size: 80px; color: rgb(104, 35, 35)">&</span>
             </div>
             <div class="col-12 pt-4">
-                <img data-aos="fade-left" src="./images/cp1.png" style="width: 300px; height: auto; max-width: 100%;">
+                <img data-aos="fade-up" src="./images/cp1.png" style="width: 300px; height: auto; max-width: 100%;">
                 <br>
                 <span style="font-family: latin; font-size: 35px; color: rgb(104, 35, 35)">Yulia Rahmawati</span>
                 <h4 style="font-size: 20px; font-family: standart; color:rgb(83, 83, 83) ; ">Putra Dari Bapak Hermawan
@@ -183,7 +198,7 @@
     <!-- hal3 akhir -->
 
     <!-- hal4 -->
-    <div class="container-fluid hal4">
+    <div id="waktu" class="container-fluid hal4">
         <div class="container">
             <h2 data-aos="fade-up" style="font-family: latin; font-size: 35px; color:rgb(255, 255, 255) ;"
                 class="pb-3 pt-3 text-center">
@@ -193,7 +208,7 @@
                 alt="">
             <div class="row pt-3">
                 <div class="bungkus" style="margin-bottom: 40px;">
-                    <div class="col-sm-6 text-center" style="color: rgb(255, 255, 255);">
+                    <div class="col-12 text-center" style="color: rgb(255, 255, 255);">
                         <H2 style="font-family: latin; color: brown;" class="text-center" data-aos="fade-up">Akad Nikah
                         </H2>
                         <img src="./images/hr.svg"
@@ -221,7 +236,7 @@
                 </div>
 
                 <div class="bungkus">
-                    <div class="col-sm-6 text-center">
+                    <div class="col-12 text-center">
                         <div>
                             <H2 data-aos="fade-up" style="font-family: latin; color: brown;" class="text-center">Resepsi
                                 Pernikahan</H2>
@@ -278,7 +293,7 @@
 
     <!-- hal6 -->
 
-    <div class="container-fluid hal6">
+    <div id="story" class="container-fluid hal6">
         <div class="container" style="padding-top: 70px; padding-bottom: 30px;">
             <h2 data-aos="fade-up" style="font-family: latin; font-size: 35px; color:rgb(104, 35, 35) ;"
                 class="text-center">Our Love
@@ -286,8 +301,8 @@
             <img src="./images/hr.svg" class="pb-5"
                 style="padding-bottom: 30px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
                 alt="">
-            <img data-aos="fade-right" src="./images/galeri.jpg" class="rounded"
-                style="margin: auto; width: 100%; height: auto; max-width: 100%; display: block;">
+            <img data-aos="fade-up" src="./images/galeri.jpg" class="rounded"
+                style="width: 100%; height: auto; max-width: 100%; display: block;">
             <p data-aos="fade-up" class="pt-5"
                 style="font-size: 25px; color: rgb(104, 35, 35); font-weight: bolder; font-family: standart;">21, July
                 2020</p>
@@ -300,8 +315,8 @@
                 just blows me away </p>
         </div>
         <div class="container" style="padding-top: 30px; padding-bottom: 30px;">
-            <img data-aos="fade-left" src="./images/galeri2.jpg" class="rounded"
-                style="margin: auto; width: 100%; height: auto; max-width: 100%; display: block;">
+            <img data-aos="fade-up" src="./images/galeri2.jpg" class="rounded"
+                style=" width: 100%; height: auto; max-width: 100%; display: block;">
             <p data-aos="fade-up" class="pt-5"
                 style="font-size: 25px; color: rgb(104, 35, 35); font-weight: bolder; font-family: standart;">21, July
                 2020</p>
@@ -314,7 +329,7 @@
         </div>
         <div class="container" style="padding-top: 30px; padding-bottom: 30px;">
             <img data-aos="fade-right" src="./images/galeri3.jpg" class="rounded"
-                style="margin: auto; width: 100%; height: auto; max-width: 100%; display: block;">
+                style="width: 100%; height: auto; max-width: 100%; display: block;">
             <p data-aos="fade-up" class="pt-5"
                 style="font-size: 25px; color: rgb(104, 35, 35); font-weight: bolder; font-family: standart;">21, July
                 2020</p>
@@ -345,12 +360,12 @@
                             <h6 class=" mb-3">Nama :</h6>
                             <input class="form-control" id="nama" name="nama" type="text" placeholder="Masukkan Nama">
                         </div>
-                        <div class="mb-3" >
+                        <div class="mb-3">
                             <h6 class=" mb-3">Nomor Handphone :</h6>
                             <input class="form-control" id="nomor_hp" name="nomor_hp" type="number"
                                 placeholder="Masukkan Nomor Handphone">
                         </div>
-                        <div class="mb-3" >
+                        <div class="mb-3">
                             <h6 class=" mb-3">Alamat :</h6>
                             <input class="form-control" id="alamat" name="alamat" type="text"
                                 placeholder="Masukkan Alamat">
@@ -442,7 +457,7 @@
     <!-- hal8 akhir -->
 
     <!-- hal9 -->
-    <div class="container-fluid hal9" style="padding: 50px;">
+    <div class="container-fluid hal9" style="padding: 50px; padding-bottom: 100px;">
         <div data-aos="fade-up">
             <img src="./images/wm.png" style="width: 100%; max-width: 100%; height: auto;">
             <div class="row">
@@ -595,6 +610,43 @@
     }, 1000);
 </script>
 <!-- AKHIR COUNTDOWN -->
+
+
+<!-- audio -->
+
+<!-- audio -->
+<script>
+    const myAudio = document.getElementById("audio");
+    const btn = document.getElementById("btn-playback");
+    const btnIcon = document.querySelector("#btn-playback > i");
+    const btnText = document.getElementById("btn-text");
+
+    const toggleMusic = () => {
+        const dataPlay = btn.getAttribute('data-play');
+
+        if (dataPlay === 'false') {
+            btn.setAttribute('data-play', 'true');
+            myAudio.play();
+            btnIcon.classList.remove("fa-play");
+            btnIcon.classList.add("fa-pause");
+            btnText.innerText = "PAUSE";
+        } else {
+            btn.setAttribute('data-play', 'false');
+            myAudio.pause();
+            btnIcon.classList.remove("fa-pause");
+            btnIcon.classList.add("fa-play");
+            btnText.innerText = "PLAY";
+        }
+    };
+
+    myAudio.onpause = () => {
+        btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("fa-pause");
+        btnIcon.classList.add("fa-play");
+        btnText.innerText = "PLAY";
+    };
+</script>
 
 
 

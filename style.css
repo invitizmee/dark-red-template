@@ -13,6 +13,19 @@
 
 /* font */
 
+/* music */
+.msc {
+    width: 80px;
+      position:fixed; /*trik posisi fix*/
+      z-index:3; /*supaya header selalu muncul di atas seluruh elemen*/
+  }
+  
+  .msc button {
+    color: rgb(156, 77, 24);
+  }
+
+/* music */
+
 /* navbar bottom */
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
