@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mini Lightbox</title>
+    <meta name="description"
+        content="Prosty lightbox do wyswietlania zdjec w wiekszym rozmiarze, bez uzycia jQuery, bardzo lekki">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header style=" padding-top: 50px ; padding-bottom: 50px;">
+        <h1>
+            Welcome to Our Gallery
+        </h1>
+        <img src="../images/hr white.svg"
+            style="padding-top: 10px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+            alt="">
+    </header>
+    <main>
+        <section style="padding-bottom: 80px;">
+            <ul>
+                <li>
+                    <a class="link-photo" data-lightbox="img" href="img/galeri1.jpg" title="Powieksz zdjecie">
+                        <img src="img/galeri1th.jpg" alt="demo">
+                    </a>
+                </li>
+                <li>
+                    <a class="link-photo" data-lightbox="img" href="img/galeri2.jpg" title="Powieksz zdjecie">
+                        <img src="img/galeri2th.jpg" alt="demo">
+                    </a>
+                </li>
+                <li>
+                    <a class="link-photo" data-lightbox="img" href="img/galeri3.jpg" title="Powieksz zdjecie">
+                        <img src="img/galeri3th.jpg" alt="demo">
+                    </a>
+                </li>
+                <li>
+                    <a class="link-photo" data-lightbox="img" href="img/galeri1.jpg" title="Powieksz zdjecie">
+                        <img src="img/galeri1th.jpg" alt="demo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div data-aos="fade-up">
+            <img src="../images/wm.png" style="width: 200%; max-width: 100%; height: auto;">
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+        const lb = lightbox();
+    </script>
+</body>
+
+</html>

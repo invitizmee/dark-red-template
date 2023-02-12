@@ -1,0 +1,269 @@
+/* font */
+@font-face {
+    font-family: 'latin';
+    src: url(./font/Rosmatika.ttf);
+    color: rgb(104, 35, 35);
+}
+
+@font-face {
+    font-family: 'standart';
+    src: url(./font/AvenirLTProBook.otf);
+    color: rgb(104, 35, 35)
+}
+
+/* font */
+
+/* navbar bottom */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.navigation {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: bottom;
+    background: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navigation ul {
+    position: relative;
+    display: flex;
+    width: 400px;
+    z-index: 1000;
+    z-index: 1000;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 85px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navigation ul li a:hover .icon {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-8px);
+    color: #29fd53;
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    opacity: 0;
+    font-weight: 400;
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translateY(0px);
+}
+
+.navigation ul li.active a .text {
+    transform: translateY(16px);
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    width: 80%;
+    height: 16px;
+
+
+    border-radius: 10px;
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(80px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(80px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(80px * 3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(80px * 4));
+}
+
+/* akhir navbar */
+
+
+/* hal-1 */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.hal1 {
+    background: rgba(0, 0, 0, 0.4) url('./images/bg\ 1.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* akhir hal-1 */
+
+/* hal2 */
+
+
+
+/* akhir hal2 */
+
+/* hal-3 */
+
+.hal3 {
+    background-image: url('./images/bg4.png');
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.demo {
+    color: rgb(255, 255, 255);
+    font-family: 'latin';
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* akhir hal3 */
+
+/* hal 4 */
+
+.hal4 {
+    background-color: rgb(228, 228, 228);
+}
+
+/* akhir hal -4 */
+
+
+/* hal5 */
+
+.hal5 {
+    background: url('./images/bg4.png');
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icongaleri {
+    background-color: rgb(94, 33, 33);
+    border-radius: 20px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.tombol {
+    background-color: rgb(102, 3, 3);
+    border: none;
+    color: white;
+}
+
+/* hal5 akhir */
+
+/* hal6 */
+.hal6 {
+    background-color: rgb(109, 37, 37);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bungkus {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+/* hal6 akhir */
+
+/* hal7 */
+.hal7 {
+    background-color: rgb(218, 218, 218);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* hal7 akhir */
+
+/* hal-9 */
+.hal9 {
+    background-color: rgb(124, 32, 32);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* akhir hal-9 */
