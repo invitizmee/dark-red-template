@@ -18,6 +18,7 @@
     width: 80px;
       position:fixed; /*trik posisi fix*/
       z-index:3; /*supaya header selalu muncul di atas seluruh elemen*/
+      margin-top: 300px;
   }
   
   .msc button {

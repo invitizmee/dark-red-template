@@ -13,6 +13,20 @@
 </head>
 
 <body>
+
+     <!-- audio -->
+     <div class="container msc">
+        <button class="btn btn-danger" class="display-none" onclick="toggleMusic()" id="btn-playback"
+            data-play="false">
+            <i class="fa fa-play"></i>
+        </button>
+        <audio id="audio">
+            <source id="audio" src="./rer.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- audio akhir -->
+
     <header style=" padding-top: 50px ; padding-bottom: 50px;">
         <h1>
             Welcome to Our Gallery
@@ -57,6 +71,40 @@
     <script>
         const lb = lightbox();
     </script>
+
+    <!-- audio -->
+<script>
+    const myAudio = document.getElementById("audio");
+    const btn = document.getElementById("btn-playback");
+    const btnIcon = document.querySelector("#btn-playback > i");
+    const btnText = document.getElementById("btn-text");
+
+    const toggleMusic = () => {
+        const dataPlay = btn.getAttribute('data-play');
+
+        if (dataPlay === 'false') {
+            btn.setAttribute('data-play', 'true');
+            myAudio.play();
+            btnIcon.classList.remove("fa-play");
+            btnIcon.classList.add("fa-pause");
+            btnText.innerText = "PAUSE";
+        } else {
+            btn.setAttribute('data-play', 'false');
+            myAudio.pause();
+            btnIcon.classList.remove("fa-pause");
+            btnIcon.classList.add("fa-play");
+            btnText.innerText = "PLAY";
+        }
+    };
+
+    myAudio.onpause = () => {
+        btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("fa-pause");
+        btnIcon.classList.add("fa-play");
+        btnText.innerText = "PLAY";
+    };
+</script>
 </body>
 
 </html>
