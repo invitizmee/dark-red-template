@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template wedding 2</title>
+    <title>Dark-Red-Invitizmee</title>
 
     <!-- lightbox -->
 
@@ -32,7 +32,7 @@
 
     <!-- audio -->
     <div class="container msc">
-        <button class="btn btn-danger" class="display-none" onclick="toggleMusic()" id="btn-playback"
+        <button class="btn btn-danger tombol2" class="display-none" onclick="toggleMusic()" id="btn-playback"
             data-play="false">
             <i class="fa fa-play"></i>
         </button>
@@ -193,6 +193,7 @@
                 style="padding-bottom: 30px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
                 alt="">
             <h2 id="demo" class="demo"></h2>
+            <h2 id="demo2" class="demo2">Hari Jam Menit Detik</h2>
         </div>
     </div>
     <!-- hal3 akhir -->
@@ -400,14 +401,11 @@
     <!-- hal10 -->
     <div id="kado" class="container-fluid hal10 pb-5 pt-5 text-center">
         <h1 style="font-family: latin; font-size: 35px; color: brown; " data-aos="fade-up">Share Love</h1>
-        <img src="./images/hr.svg" class="pb-5"
+        <img src="./images/hr.svg" class="pb-3"
             style="padding-bottom: 15px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
             alt="">
         <br>
-        <p style="font-family: standart; font-size: 20px; color: darkgrey;" data-aos="fade-up">"Your prayers & blessings
-            at our wedding is
-            enough as a gift, but if you want to give more,
-            we are happy to receive it and it will complement our happiness even more "
+        <p style="font-family: standart; font-size: 20px; color: darkgrey;" data-aos="fade-up">"Doa restu Bapak/Ibu sekalian merupakan karunia yang sangat berarti bagi kami. Dan jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu dapat memberi kado secara cashless. Terima kasih "
         </p>
         <div class="container pt-5 pb-5">
             <div class="bungkus-barcode p-4" data-aos="fade-up">
@@ -427,7 +425,7 @@
             <br>
             <div class="bungkus-barcode p-4" data-aos="fade-up">
                 <img src="images/barcode.jpg" class="barcode">
-                <h5 class="display-7 pt-3 text-black">BANK MANDIRI</h5>
+                <h5 class="display-7 pt-3 text-black">BANK BCA</h5>
                 <h6 class="display-7 text-black" id="text-to-copy2">92389230493478</h6>
                 <button class="btn btn-danger tombol" id="copy-button2">Copy</button>
                 <button href="#" data-aos="fade-up" class="btn btn-danger tombol bi bi-whatsapp">
@@ -453,6 +451,7 @@
                 alt="">
             <h4 style=" font-size: 25px; font-family: standart;">01, Januari 2024</h4>
         </div>
+
     </div>
     <!-- hal8 akhir -->
 
@@ -599,8 +598,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Keluarkan hasil dalam elemen dengan id = "demo"
-        document.getElementById("demo").innerHTML = days + "H " + hours + "J " +
-            minutes + "M " + seconds + "D ";
+        document.getElementById("demo").innerHTML = days + " " + hours + " " +
+            minutes + " " + seconds + " ";
 
         //Jika hitungan mundur selesai, tulis beberapa teks
         if (distance < 0) {
