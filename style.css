@@ -11,6 +11,11 @@
     color: rgb(104, 35, 35)
 }
 
+@font-face {
+    font-family: 'latinjudul';
+    src: url(./font/simplethread.otf);
+}
+
 /* font */
 
 /* music */
